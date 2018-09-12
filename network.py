@@ -21,7 +21,7 @@ TRAIN_DATA_SPLIT = 0.71429 # Percentage of data used for training
 setup()
 
 # Load datasets and create iterators
-x_train, x_valid, x_test = load_mnits ist_features(TRAIN_DATA_SPLIT)
+x_train, x_valid, x_test = load_mnist_features(TRAIN_DATA_SPLIT)
 y_train, y_valid, y_test = load_mnist_labels(TRAIN_DATA_SPLIT)
 
 train_set = tf.data.Dataset.from_tensor_slices((x_train, y_train))\
