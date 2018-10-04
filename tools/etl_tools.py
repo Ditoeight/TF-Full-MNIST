@@ -88,7 +88,7 @@ def split_data(data, train_pct, validation):
         split = int(data.shape[0] * train_pct)
         train, test = np.split(data, [split])
 
-        return train, x_test
+        return train, test
 
 def load_mnist_features(train_pct, validation=True):
     """Load features to np arrays
